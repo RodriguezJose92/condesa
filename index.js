@@ -343,7 +343,7 @@ async function verifyDomElement(){
 
 }; 
 
-setTimeout(()=>{
+setTimeout( async()=>{
     await verifyDomElement();
 },2000)
 
