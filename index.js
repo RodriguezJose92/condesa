@@ -339,7 +339,7 @@ async function verifyDomElement(){
         return;
     }
 
-    await mudiExperience.experienceOn( skuNumber.innerHTML , document.body.querySelector(`.flex-viewport`).parentNode)
+    await mudiExperience.experienceOn( skuNumber.innerHTML , document.body.querySelector(`.flex-viewport`) )
 
 }; 
 
