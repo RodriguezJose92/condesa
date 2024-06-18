@@ -236,7 +236,7 @@
 
 @media screen and (max-width:500px) {
     .btnMudi3D {
-        width: 70px;
+        width: 60px;
         height: 70px;
         position: relative;
         cursor: pointer;
@@ -254,19 +254,19 @@
     }
 
     .tooltipMudi {
-        background-color: #cf7247;
-        color: white;
+        background-color: #bebcbe;
+        color: rgb(0, 0, 0);
         font-family: sans-serif;
-        width: 360px;
+        width: 310px;
         font-size: 14px;
         padding: 9px 13px;
-        border-radius: 15px;
+        border-radius: 3px;
         text-align: center;
         position: absolute;
         top: 4%;
-        right: 30%;
+        right: 40%;
         filter: drop-shadow(3px 5px 5px rgba(10, 10, 10, 0.196));
-        scale: 0.7;
+        scale: 0.75;
     }
 
     .tooltipMudi::after {
