@@ -325,7 +325,7 @@ let verifycontent = 0;
 /** verify DomElement */
 async function verifyDomElement(){
 
-    let fatherContainer = document.body.querySelector(`.flex-viewport`);
+    let fatherContainer = document.body.querySelector(`.woocommerce-product-gallery__trigger`);
     let skuNumber       = document.body.querySelector(`.sku`);
 
     if( !fatherContainer && !skuNumber ) {
@@ -339,11 +339,14 @@ async function verifyDomElement(){
         return;
     }
 
-    await mudiExperience.experienceOn( skuNumber.innerHTML , document.body.querySelector(`.flex-viewport`) )
+    await mudiExperience.experienceOn( skuNumber.innerHTML , fatherContainer )
 
 }; 
 
-await verifyDomElement();
+setTimeout(()=>{
+    await verifyDomElement();
+},2000)
+
 
 
 
