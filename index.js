@@ -76,7 +76,7 @@ class MudiExperience{
                             fill:#f4f4f4;
                         }
                         .cls-3{
-                            fill:#522c1c;
+                            fill:${this.color};
                         }
                     </style>
                 </defs>
@@ -339,7 +339,7 @@ async function verifyDomElement(){
         return;
     }
 
-    await mudiExperience.experienceOn( skuNumber.innerHTML , fatherContainer)
+    await mudiExperience.experienceOn( skuNumber.innerHTML , fatherContainer.parentNode)
 
 }; 
 
