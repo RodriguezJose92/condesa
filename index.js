@@ -325,7 +325,7 @@ let verifycontent = 0;
 /** verify DomElement */
 async function verifyDomElement(){
 
-    let fatherContainer = document.body.querySelector(`.woocommerce-product-gallery__trigger`);
+    let fatherContainer = document.body.querySelector(`.woocommerce-product-gallery`);
     let skuNumber       = document.body.querySelector(`.sku`);
 
     if( !fatherContainer && !skuNumber ) {
